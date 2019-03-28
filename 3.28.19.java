@@ -12,12 +12,12 @@ class 3.28.19 {
   		Arrays.sort(a);
     	int compare = a[0];
     	for(int i = 1; i < a.length; i++) {
-          if (compare > 0 && a[i] - 1 != compare){
+          if (compare > 0 && a[i] - 1 > compare){
             return compare + 1;
           }
           compare = a[i];
         }
-    	return a[a.length - 1] + 1;
+    return a[a.length - 1] + 1;
     
   }
   
